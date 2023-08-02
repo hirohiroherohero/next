@@ -1,4 +1,10 @@
+# config
 commitlint.config.js
 next.config.js
+
+# msw
+mockServiceWorker.js
+
+# codegen
 **.graphql.ts
 generated.ts

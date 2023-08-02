@@ -39,6 +39,7 @@
         ]
       }
     ],
+    "@typescript-eslint/no-unused-vars": "warn",
     "prettier/prettier": "warn",
     "unused-imports/no-unused-imports": "warn",
     "no-console": [
