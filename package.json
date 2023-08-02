@@ -34,17 +34,19 @@
     "@graphql-codegen/client-preset": "^4.1.0",
     "@graphql-codegen/near-operation-file-preset": "^2.5.0",
     "@graphql-codegen/typescript": "^4.0.1",
+    "@graphql-codegen/typescript-msw": "^1.1.6",
     "@graphql-codegen/typescript-operations": "^4.0.1",
     "@graphql-codegen/typescript-react-apollo": "^3.3.7",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
-    "@vanilla-extract/next-plugin": "^2.1.3",
+    "@vanilla-extract/next-plugin": "^2.2.1",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-unused-imports": "^3.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
+    "msw": "^1.2.3",
     "prettier": "^3.0.0"
   },
   "lint-staged": {
@@ -52,5 +54,8 @@
       "eslint --quiet --fix .",
       "prettier --config ./.prettierrc --write -u"
     ]
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
