@@ -17,6 +17,7 @@
     "@types/react-dom": "18.2.7",
     "@vanilla-extract/css": "^1.12.0",
     "axios": "^1.4.0",
+    "deepmerge": "^4.3.1",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.10",
     "graphql": "^16.7.1",
@@ -43,7 +44,7 @@
   "lint-staged": {
     "*.{ts,tsx}": [
       "eslint --quiet --fix .",
-      "prettier --config ./.prettierrc.json --write -u"
+      "prettier --config ./.prettierrc --write -u"
     ]
   }
 }
