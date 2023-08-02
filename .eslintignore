@@ -1,2 +1,4 @@
 commitlint.config.js
 next.config.js
+**.graphql.ts
+generated.ts
