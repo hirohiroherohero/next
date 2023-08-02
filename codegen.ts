@@ -27,22 +27,22 @@ const config: CodegenConfig = {
     },
 
     // msw
-    // 'mocks/schema/generated.ts': {
-    //   schema: ['mocks/schema/**/mock.schema.gql', 'https://beta.pokeapi.co/graphql/v1beta'],
-    //   documents: 'mocks/**/*.gql',
-    //   config: { scalars },
-    //   plugins: ['typescript'],
-    // },
-    // 'mocks/': {
-    //   schema: 'mocks/schema/**/mock.schema.gql',
-    //   documents: 'mocks/**/*.gql',
-    //   preset: 'near-operation-file',
-    //   presetConfig: {
-    //     baseTypesPath: `~mocks/schema/generated`,
-    //     extension: '.graphql.ts',
-    //   },
-    //   plugins: ['typescript-operations', 'typescript-msw', 'typescript-react-apollo'],
-    // },
+    'src/mocks/graphql/schema/generated.ts': {
+      schema: ['src/mocks/graphql/schema/mock.schema.gql'],
+      documents: 'src/mocks/**/*.gql',
+      config: { scalars },
+      plugins: ['typescript'],
+    },
+    'mocks/': {
+      schema: 'src/mocks/graphql/schema/**/mock.schema.gql',
+      documents: 'src/mocks/**/*.gql',
+      preset: 'near-operation-file',
+      presetConfig: {
+        baseTypesPath: `~@/mocks/graphql/schema/generated`,
+        extension: '.graphql.ts',
+      },
+      plugins: ['typescript-operations', 'typescript-msw', 'typescript-react-apollo'],
+    },
   },
   config: {
     enumsAsTypes: true,
