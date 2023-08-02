@@ -1,9 +1,17 @@
 {
-  "trailingComma": "all",
-  "singleQuote": true,
-  "semi": true,
-  "tabWidth": 2,
-  "parser": "typescript",
-  "printWidth": 120,
-  "arrowParens": "always"
+    "trailingComma": "all",
+    "singleQuote": true,
+    "semi": true,
+    "tabWidth": 2,
+    "parser": "typescript",
+    "printWidth": 120,
+    "arrowParens": "always",
+    "overrides": [
+        {
+            "files": "*.gql",
+            "options": {
+                "parser": "graphql"
+            }
+        }
+    ]
 }
