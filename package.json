@@ -8,7 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "codegen": "graphql-codegen"
+    "codegen": "graphql-codegen",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage"
   },
   "dependencies": {
     "@apollo/client": "^3.7.17",
@@ -38,6 +41,7 @@
     "@graphql-codegen/typescript-operations": "^4.0.1",
     "@graphql-codegen/typescript-react-apollo": "^3.3.7",
     "@rollup/plugin-graphql": "^2.0.3",
+    "@testing-library/jest-dom": "^5.17.0",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
     "@vanilla-extract/next-plugin": "^2.2.1",
@@ -47,10 +51,11 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-unused-imports": "^3.0.0",
     "husky": "^8.0.3",
+    "jsdom": "^22.1.0",
     "lint-staged": "^13.2.3",
     "msw": "^1.2.3",
     "prettier": "^3.0.0",
-    "vitest": "^0.34.1"
+    "vitest": "^0.33.0"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
