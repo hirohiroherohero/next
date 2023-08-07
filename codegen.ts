@@ -9,7 +9,7 @@ const config: CodegenConfig = {
   overwrite: true,
   generates: {
     // 실 사용
-    'graphql/generated.ts': {
+    'src/graphql/generated.ts': {
       schema: '',
       documents: 'src/graphql/**/*.gql',
       config: { scalars },
