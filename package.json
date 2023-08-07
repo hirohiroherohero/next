@@ -11,7 +11,17 @@
     "codegen": "graphql-codegen",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "vitest --coverage",
+    "type:coverage": "typescript-coverage-report || true && open coverage-ts/index.html"
+  },
+  "typeCoverage": {
+    "atLeast": 100,
+    "detail": true,
+    "cache": true,
+    "ignoreFiles": [
+      "**/style.ts",
+      "**/*.js"
+    ]
   },
   "dependencies": {
     "@apollo/client": "^3.7.17",
@@ -55,6 +65,7 @@
     "lint-staged": "^13.2.3",
     "msw": "^1.2.3",
     "prettier": "^3.0.0",
+    "typescript-coverage-report": "^0.8.0",
     "vitest": "^0.33.0"
   },
   "lint-staged": {

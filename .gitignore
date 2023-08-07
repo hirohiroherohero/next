@@ -37,3 +37,7 @@ next-env.d.ts
 # codegen
 generated.ts
 *.graphql.ts
+
+# typescript coverage report
+.type-coverage
+coverage-ts
