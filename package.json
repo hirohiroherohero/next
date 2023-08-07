@@ -37,9 +37,11 @@
     "@graphql-codegen/typescript-msw": "^1.1.6",
     "@graphql-codegen/typescript-operations": "^4.0.1",
     "@graphql-codegen/typescript-react-apollo": "^3.3.7",
+    "@rollup/plugin-graphql": "^2.0.3",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
     "@vanilla-extract/next-plugin": "^2.2.1",
+    "@vitejs/plugin-react-swc": "^3.3.2",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^5.0.0",
@@ -47,7 +49,8 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
     "msw": "^1.2.3",
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.0",
+    "vitest": "^0.34.1"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
