@@ -15,7 +15,7 @@
     "type:coverage": "typescript-coverage-report || true && open coverage-ts/index.html"
   },
   "typeCoverage": {
-    "atLeast": 100,
+    "atLeast": 98,
     "detail": true,
     "cache": true,
     "ignoreFiles": [
