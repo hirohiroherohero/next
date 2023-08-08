@@ -14,7 +14,7 @@ instance.interceptors.request.use(
   (config) => {
     return config;
   },
-  (error) => {
+  (error: unknown) => {
     return Promise.reject(error);
   },
 );
@@ -22,7 +22,7 @@ instance.interceptors.response.use(
   (response) => {
     return response;
   },
-  (error) => {
+  (error: unknown) => {
     return Promise.reject(error);
   },
 );
