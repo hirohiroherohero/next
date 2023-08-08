@@ -8,3 +8,7 @@ mockServiceWorker.js
 # codegen
 **.graphql.ts
 generated.ts
+
+# typescript coverage report
+.type-coverage
+coverage-ts
